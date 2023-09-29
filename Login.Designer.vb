@@ -24,11 +24,15 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         SuspendLayout()
         ' 
         ' Guna2Button1
         ' 
+        Guna2Button1.BorderRadius = 8
         Guna2Button1.CustomizableEdges = CustomizableEdges1
         Guna2Button1.DisabledState.BorderColor = Color.DarkGray
         Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
@@ -43,16 +47,35 @@ Partial Class Login
         Guna2Button1.TabIndex = 0
         Guna2Button1.Text = "Guna2Button1"
         ' 
+        ' Guna2Button2
+        ' 
+        Guna2Button2.BorderRadius = 8
+        Guna2Button2.CustomizableEdges = CustomizableEdges3
+        Guna2Button2.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button2.ForeColor = Color.White
+        Guna2Button2.Location = New Point(285, 274)
+        Guna2Button2.Name = "Guna2Button2"
+        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Button2.Size = New Size(225, 56)
+        Guna2Button2.TabIndex = 1
+        Guna2Button2.Text = "Guna2Button2"
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Guna2Button2)
         Controls.Add(Guna2Button1)
         Name = "Login"
-        Text = "Login"
+        Text = "45"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
 End Class
