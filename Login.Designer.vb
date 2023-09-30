@@ -39,14 +39,14 @@ Partial Class Login
         Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         Guna2Button1.FillColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
-        Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.Black
-        Guna2Button1.Location = New Point(321, 109)
+        Guna2Button1.Location = New Point(285, 104)
         Guna2Button1.Name = "Guna2Button1"
         Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2Button1.Size = New Size(253, 153)
+        Guna2Button1.Size = New Size(225, 146)
         Guna2Button1.TabIndex = 0
-        Guna2Button1.Text = "Guna2Button1"
+        Guna2Button1.Text = "Inhaus"
         ' 
         ' Guna2Button2
         ' 
@@ -56,20 +56,20 @@ Partial Class Login
         Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button2.ForeColor = Color.White
-        Guna2Button2.Location = New Point(321, 288)
+        Guna2Button2.Location = New Point(285, 274)
         Guna2Button2.Name = "Guna2Button2"
         Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Button2.Size = New Size(253, 59)
+        Guna2Button2.Size = New Size(225, 56)
         Guna2Button2.TabIndex = 1
         Guna2Button2.Text = "Guna2Button2"
         ' 
         ' Login
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(900, 472)
+        ClientSize = New Size(800, 450)
         Controls.Add(Guna2Button2)
         Controls.Add(Guna2Button1)
         Name = "Login"
