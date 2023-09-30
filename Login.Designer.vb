@@ -69,9 +69,15 @@ Partial Class Login
       ' Panel1
       ' 
       Panel1.BackColor = SystemColors.ActiveCaption
+<<<<<<< HEAD
       Panel1.Location = New Point(23, 26)
       Panel1.Name = "Panel1"
       Panel1.Size = New Size(378, 695)
+=======
+      Panel1.Location = New Point(369, 332)
+      Panel1.Name = "Panel1"
+      Panel1.Size = New Size(378, 434)
+>>>>>>> Tischplan
       Panel1.TabIndex = 2
       ' 
       ' Login

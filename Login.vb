@@ -3,8 +3,12 @@ Imports System.Windows.Forms
 Imports Guna.UI2.WinForms
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
+<<<<<<< HEAD
 Imports System.Data.SqlClient ' Oder: Imports MySql.Data.MySqlClient für MySQL
 
+=======
+Imports System.Data.SqlClient
+>>>>>>> Tischplan
 
 Public Class Login
    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
@@ -14,9 +18,42 @@ Public Class Login
 
    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
       ' Rufe die Funktion zum Erstellen der Buttons auf
+<<<<<<< HEAD
       CreateButtons(5) ' Hier kannst du die Anzahl der Buttons festlegen
    End Sub
 
+=======
+      CreateButtons(10) ' Hier kannst du die Anzahl der Buttons festlegen
+
+
+      ' Panel erstellen und zur Form hinzufügen
+      Dim panel As New Panel()
+      panel.Dock = DockStyle.Top
+      Me.Controls.Add(panel)
+      panel.BackColor = Color.Aqua
+
+      panel.Height = Me.Height * 0.2
+
+      ' Funktion zum Erstellen und Positionieren der Buttons aufrufen
+      CreateAndPositionButtons(panel)
+   End Sub
+   Private Sub CreateAndPositionButtons(panel As Panel)
+      For i As Integer = 1 To 5
+         ' Button erstellen
+         Dim button As New Button()
+         button.Text = "Button " & i
+
+         ' Größe und Position anpassen
+         button.Width = 100
+         button.Height = 30
+         button.Left = 10
+         button.Top = (i - 1) * (button.Height + 10)
+
+         ' Button dem Panel hinzufügen
+         panel.Controls.Add(button)
+      Next
+   End Sub
+>>>>>>> Tischplan
    Private Sub CreateButtons(numButtons As Integer)
       For i As Integer = 1 To numButtons
          ' Erstelle einen neuen guna2Button
@@ -44,6 +81,7 @@ Public Class Login
       Dim clickedButton As Guna2Button = DirectCast(sender, Guna2Button)
       MessageBox.Show("Button " & clickedButton.Text & " wurde geklickt.")
    End Sub
+<<<<<<< HEAD
    Private Function BonNummer() As Integer
       Dim connection As MySqlConnection = DatabaseConnection.GetConnection()
 
@@ -92,5 +130,26 @@ Public Class Login
          End Using
       End Using
 
+=======
+
+
+
+   Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+      SQL = "SELECT Max(Menu.Menue) AS MaxMenue FROM Menu   WHERE Menu.isDelete <> 1 "
+
+      Dim data As DataTable = DatabaseAccess.GetDataFromDatabase(SQL)
+
+      For Each row As DataRow In data.Rows
+         ' Zugriff auf die Daten in den Spalten der aktuellen Zeile
+         Dim value As Object = row("MaxMenue")
+
+
+         ' Verarbeite die Daten nach Bedarf
+         MsgBox($"Max Nummer ist : {value}")
+      Next
+
+
+
+>>>>>>> Tischplan
    End Sub
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+<<<<<<< HEAD
 
 Public Class DatabaseConnection
 
@@ -14,6 +15,31 @@ Public Class DatabaseConnection
       End Try
       Return connection
    End Function
+=======
+Public Class DatabaseAccess
+
+   Public Shared Function GetDataFromDatabase(SQL_Text As String) As DataTable
+      Dim query As String = SQL_Text
+      Dim dataTable As New DataTable()
+
+      Using connection As New MySqlConnection(connectionString)
+         Using command As New MySqlCommand(query, connection)
+            Try
+               connection.Open()
+               Dim adapter As New MySqlDataAdapter(command)
+               adapter.Fill(dataTable)
+            Catch ex As Exception
+               ' Behandle Datenbankfehler hier
+               MsgBox("Fehler beim Abrufen der Daten aus der Datenbank: " & ex.Message)
+            End Try
+         End Using
+      End Using
+
+      Return dataTable
+   End Function
+
+
+>>>>>>> Tischplan
 
    Public Shared Sub CloseConnection(ByRef connection As MySqlConnection)
       If connection.State = ConnectionState.Open Then
