@@ -1,4 +1,33 @@
-﻿
+﻿Imports MySql.Data.MySqlClient
+
+Public Class DatabaseConnection
+
+   Private Shared connectionString As String = "Server=localhost;Database=Kasse_sql;User=root;Password=pandapositschoen1288;"
+
+   Public Shared Function GetConnection() As MySqlConnection
+      Dim connection As MySqlConnection = New MySqlConnection(connectionString)
+      Try
+         connection.Open()
+      Catch ex As Exception
+         ' Behandele Verbindungsfehler hier
+         Console.WriteLine("Fehler beim Herstellen der Verbindung zur MySQL-Datenbank: " & ex.Message)
+      End Try
+      Return connection
+   End Function
+
+   Public Shared Sub CloseConnection(ByRef connection As MySqlConnection)
+      If connection.State = ConnectionState.Open Then
+         connection.Close()
+      End If
+   End Sub
+
+
+End Class
+
+
+
+
+
 Public Class Resizer
     '-------------------------------------------------------------------------------
     ' Resizer
