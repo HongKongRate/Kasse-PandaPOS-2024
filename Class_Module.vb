@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-<<<<<<< HEAD
+
 
 Public Class DatabaseConnection
 
@@ -15,7 +15,8 @@ Public Class DatabaseConnection
       End Try
       Return connection
    End Function
-=======
+End Class
+
 Public Class DatabaseAccess
 
    Public Shared Function GetDataFromDatabase(SQL_Text As String) As DataTable
@@ -39,7 +40,6 @@ Public Class DatabaseAccess
    End Function
 
 
->>>>>>> Tischplan
 
    Public Shared Sub CloseConnection(ByRef connection As MySqlConnection)
       If connection.State = ConnectionState.Open Then
