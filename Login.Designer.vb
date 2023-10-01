@@ -39,13 +39,14 @@ Partial Class Login
       Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
       Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
       Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-      Guna2Button1.FillColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
-      Guna2Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+      Guna2Button1.FillColor = Color.FromArgb(CByte(128), CByte(255), CByte(255))
+      Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
       Guna2Button1.ForeColor = Color.Black
-      Guna2Button1.Location = New Point(1144, 523)
+      Guna2Button1.Location = New Point(1001, 392)
+      Guna2Button1.Margin = New Padding(3, 2, 3, 2)
       Guna2Button1.Name = "Guna2Button1"
       Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-      Guna2Button1.Size = New Size(225, 146)
+      Guna2Button1.Size = New Size(197, 110)
       Guna2Button1.TabIndex = 0
       Guna2Button1.Text = "Inhaus"
       ' 
@@ -57,31 +58,34 @@ Partial Class Login
       Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
       Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
       Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-      Guna2Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+      Guna2Button2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
       Guna2Button2.ForeColor = Color.Black
-      Guna2Button2.Location = New Point(1144, 710)
+      Guna2Button2.Location = New Point(1001, 532)
+      Guna2Button2.Margin = New Padding(3, 2, 3, 2)
       Guna2Button2.Name = "Guna2Button2"
       Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-      Guna2Button2.Size = New Size(225, 56)
+      Guna2Button2.Size = New Size(197, 42)
       Guna2Button2.TabIndex = 1
       Guna2Button2.Text = "Get Bonnummer"
       ' 
       ' Panel1
       ' 
       Panel1.BackColor = SystemColors.ActiveCaption
-      Panel1.Location = New Point(369, 332)
+      Panel1.Location = New Point(323, 249)
+      Panel1.Margin = New Padding(3, 2, 3, 2)
       Panel1.Name = "Panel1"
-      Panel1.Size = New Size(378, 434)
+      Panel1.Size = New Size(331, 326)
       Panel1.TabIndex = 2
       ' 
       ' Login
       ' 
-      AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+      AutoScaleDimensions = New SizeF(7F, 15F)
       AutoScaleMode = AutoScaleMode.Font
-      ClientSize = New Size(1415, 798)
+      ClientSize = New Size(1238, 598)
       Controls.Add(Panel1)
       Controls.Add(Guna2Button2)
       Controls.Add(Guna2Button1)
+      Margin = New Padding(3, 2, 3, 2)
       Name = "Login"
       Text = "45"
       ResumeLayout(False)
