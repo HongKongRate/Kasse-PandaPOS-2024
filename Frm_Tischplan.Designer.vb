@@ -47,13 +47,12 @@ Partial Class Frm_Tischplan
       Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
       Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
       Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-      Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-      Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Frm_Tischplan))
-      Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-      Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-      Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
       Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
       Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+      Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+      Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+      Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+      Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
       Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(components)
       Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
       Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
@@ -73,11 +72,11 @@ Partial Class Frm_Tischplan
       Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
       Guna2ResizeBox1 = New Guna.UI2.WinForms.Guna2ResizeBox()
       Pnl_Unten = New Panel()
-      Btn_Ausgang = New Guna.UI2.WinForms.Guna2Button()
-      Btn_DruckAuftrag = New Guna.UI2.WinForms.Guna2Button()
-      Pnl_Mobile_Info = New Panel()
-      Pnl_Gastraum = New Panel()
       Tb_Tischnummer = New Guna.UI2.WinForms.Guna2TextBox()
+      Pnl_Gastraum = New Panel()
+      Pnl_Mobile_Info = New Panel()
+      Btn_DruckAuftrag = New Guna.UI2.WinForms.Guna2Button()
+      Btn_Ausgang = New Guna.UI2.WinForms.Guna2Button()
       Guna2Panel1.SuspendLayout()
       Guna2Panel2.SuspendLayout()
       Pnl_Unten.SuspendLayout()
@@ -273,6 +272,7 @@ Partial Class Frm_Tischplan
       Btn_Kellner.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
       Btn_Kellner.Size = New Size(52, 49)
       Btn_Kellner.TabIndex = 0
+      Btn_Kellner.Text = "1"
       ' 
       ' Guna2Button5
       ' 
@@ -389,24 +389,41 @@ Partial Class Frm_Tischplan
       Pnl_Unten.Size = New Size(1080, 90)
       Pnl_Unten.TabIndex = 1
       ' 
-      ' Btn_Ausgang
+      ' Tb_Tischnummer
       ' 
-      Btn_Ausgang.BackColor = Color.Transparent
-      Btn_Ausgang.CustomizableEdges = CustomizableEdges5
-      Btn_Ausgang.DisabledState.BorderColor = Color.DarkGray
-      Btn_Ausgang.DisabledState.CustomBorderColor = Color.DarkGray
-      Btn_Ausgang.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-      Btn_Ausgang.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-      Btn_Ausgang.FillColor = Color.White
-      Btn_Ausgang.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-      Btn_Ausgang.ForeColor = Color.White
-      Btn_Ausgang.Image = CType(resources.GetObject("Btn_Ausgang.Image"), Image)
-      Btn_Ausgang.ImageSize = New Size(50, 50)
-      Btn_Ausgang.Location = New Point(6, 18)
-      Btn_Ausgang.Name = "Btn_Ausgang"
-      Btn_Ausgang.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-      Btn_Ausgang.Size = New Size(64, 65)
-      Btn_Ausgang.TabIndex = 0
+      Tb_Tischnummer.CustomizableEdges = CustomizableEdges1
+      Tb_Tischnummer.DefaultText = "88"
+      Tb_Tischnummer.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+      Tb_Tischnummer.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+      Tb_Tischnummer.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+      Tb_Tischnummer.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+      Tb_Tischnummer.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+      Tb_Tischnummer.Font = New Font("Arial Rounded MT Bold", 36.0F, FontStyle.Regular, GraphicsUnit.Point)
+      Tb_Tischnummer.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+      Tb_Tischnummer.Location = New Point(983, 14)
+      Tb_Tischnummer.Margin = New Padding(14)
+      Tb_Tischnummer.Name = "Tb_Tischnummer"
+      Tb_Tischnummer.PasswordChar = ChrW(0)
+      Tb_Tischnummer.PlaceholderText = ""
+      Tb_Tischnummer.SelectedText = ""
+      Tb_Tischnummer.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+      Tb_Tischnummer.Size = New Size(91, 69)
+      Tb_Tischnummer.TabIndex = 2
+      ' 
+      ' Pnl_Gastraum
+      ' 
+      Pnl_Gastraum.Location = New Point(389, 13)
+      Pnl_Gastraum.Name = "Pnl_Gastraum"
+      Pnl_Gastraum.Size = New Size(583, 70)
+      Pnl_Gastraum.TabIndex = 3
+      ' 
+      ' Pnl_Mobile_Info
+      ' 
+      Pnl_Mobile_Info.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
+      Pnl_Mobile_Info.Location = New Point(157, 11)
+      Pnl_Mobile_Info.Name = "Pnl_Mobile_Info"
+      Pnl_Mobile_Info.Size = New Size(226, 72)
+      Pnl_Mobile_Info.TabIndex = 2
       ' 
       ' Btn_DruckAuftrag
       ' 
@@ -426,41 +443,23 @@ Partial Class Frm_Tischplan
       Btn_DruckAuftrag.TabIndex = 1
       Btn_DruckAuftrag.Text = "0"
       ' 
-      ' Pnl_Mobile_Info
+      ' Btn_Ausgang
       ' 
-      Pnl_Mobile_Info.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
-      Pnl_Mobile_Info.Location = New Point(157, 11)
-      Pnl_Mobile_Info.Name = "Pnl_Mobile_Info"
-      Pnl_Mobile_Info.Size = New Size(226, 72)
-      Pnl_Mobile_Info.TabIndex = 2
-      ' 
-      ' Pnl_Gastraum
-      ' 
-      Pnl_Gastraum.Location = New Point(389, 13)
-      Pnl_Gastraum.Name = "Pnl_Gastraum"
-      Pnl_Gastraum.Size = New Size(583, 70)
-      Pnl_Gastraum.TabIndex = 3
-      ' 
-      ' Tb_Tischnummer
-      ' 
-      Tb_Tischnummer.CustomizableEdges = CustomizableEdges1
-      Tb_Tischnummer.DefaultText = "88"
-      Tb_Tischnummer.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-      Tb_Tischnummer.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-      Tb_Tischnummer.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-      Tb_Tischnummer.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-      Tb_Tischnummer.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-      Tb_Tischnummer.Font = New Font("Arial Rounded MT Bold", 36.0F, FontStyle.Regular, GraphicsUnit.Point)
-      Tb_Tischnummer.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-      Tb_Tischnummer.Location = New Point(983, 14)
-      Tb_Tischnummer.Margin = New Padding(14, 14, 14, 14)
-      Tb_Tischnummer.Name = "Tb_Tischnummer"
-      Tb_Tischnummer.PasswordChar = ChrW(0)
-      Tb_Tischnummer.PlaceholderText = ""
-      Tb_Tischnummer.SelectedText = ""
-      Tb_Tischnummer.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-      Tb_Tischnummer.Size = New Size(91, 69)
-      Tb_Tischnummer.TabIndex = 2
+      Btn_Ausgang.BackColor = Color.Transparent
+      Btn_Ausgang.CustomizableEdges = CustomizableEdges5
+      Btn_Ausgang.DisabledState.BorderColor = Color.DarkGray
+      Btn_Ausgang.DisabledState.CustomBorderColor = Color.DarkGray
+      Btn_Ausgang.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+      Btn_Ausgang.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+      Btn_Ausgang.FillColor = Color.White
+      Btn_Ausgang.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+      Btn_Ausgang.ForeColor = Color.White
+      Btn_Ausgang.ImageSize = New Size(50, 50)
+      Btn_Ausgang.Location = New Point(6, 18)
+      Btn_Ausgang.Name = "Btn_Ausgang"
+      Btn_Ausgang.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+      Btn_Ausgang.Size = New Size(64, 65)
+      Btn_Ausgang.TabIndex = 0
       ' 
       ' Frm_Tischplan
       ' 
