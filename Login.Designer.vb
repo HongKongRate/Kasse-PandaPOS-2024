@@ -58,7 +58,7 @@ Partial Class Login
       Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
       Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
       Guna2Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-      Guna2Button2.ForeColor = Color.White
+      Guna2Button2.ForeColor = Color.Black
       Guna2Button2.Location = New Point(1144, 710)
       Guna2Button2.Name = "Guna2Button2"
       Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
