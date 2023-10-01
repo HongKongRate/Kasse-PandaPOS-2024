@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
    Inherits System.Windows.Forms.Form
 
@@ -40,7 +40,7 @@ Partial Class Login
       Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
       Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
       Guna2Button1.FillColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
-      Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+      Guna2Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
       Guna2Button1.ForeColor = Color.Black
       Guna2Button1.Location = New Point(1144, 523)
       Guna2Button1.Name = "Guna2Button1"
@@ -57,7 +57,7 @@ Partial Class Login
       Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
       Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
       Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-      Guna2Button2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+      Guna2Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
       Guna2Button2.ForeColor = Color.White
       Guna2Button2.Location = New Point(1144, 710)
       Guna2Button2.Name = "Guna2Button2"
@@ -69,20 +69,14 @@ Partial Class Login
       ' Panel1
       ' 
       Panel1.BackColor = SystemColors.ActiveCaption
-<<<<<<< HEAD
-      Panel1.Location = New Point(23, 26)
-      Panel1.Name = "Panel1"
-      Panel1.Size = New Size(378, 695)
-=======
       Panel1.Location = New Point(369, 332)
       Panel1.Name = "Panel1"
       Panel1.Size = New Size(378, 434)
->>>>>>> Tischplan
       Panel1.TabIndex = 2
       ' 
       ' Login
       ' 
-      AutoScaleDimensions = New SizeF(8F, 20F)
+      AutoScaleDimensions = New SizeF(8.0F, 20.0F)
       AutoScaleMode = AutoScaleMode.Font
       ClientSize = New Size(1415, 798)
       Controls.Add(Panel1)
